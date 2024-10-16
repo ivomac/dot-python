@@ -1,0 +1,58 @@
+read: .aider/CONVENTIONS.md
+
+model-settings-file: .aider/model.settings.yml
+
+model-metadata-file: .aider/model.metadata.json
+
+input-history-file: .aider/input.history
+
+chat-history-file: .aider/chat.history.md
+
+llm-history-file: .aider/llm.history
+
+analytics-log: .aider/analytics.log
+
+dark-mode: true
+
+pretty: true
+
+gitignore: false
+
+auto-commits: false
+
+dirty-commits: false
+
+attribute-author: false
+
+attribute-committer: false
+
+analytics: true
+
+vim: false
+
+cache-prompts: true
+
+restore-chat-history: true
+
+voice-format: wav
+
+voice-language: en
+
+# architect: true
+# reasoning-effort: high
+# model: deepseek/deepseek-reasoner
+
+# model: openai/gpt-4o-2024-11-20
+# model: gemini/gemini-2.0-flash-exp
+# model: anthropic/claude-3-5-sonnet-20241022
+model: anthropic/claude-3-7-sonnet-20250219
+
+# editor-model: anthropic/claude-3-5-sonnet-20241022
+editor-model: anthropic/claude-3-7-sonnet-20250219
+weak-model: anthropic/claude-3-5-haiku-20241022
+
+lint-cmd:
+  - "python:ruff format"
+  - "python:ruff check"
+  - "python:pyright"
+
