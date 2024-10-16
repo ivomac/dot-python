@@ -1,0 +1,54 @@
+read: .aider/CONVENTIONS.md
+
+model-settings-file: .aider/model.settings.yml
+
+model-metadata-file: .aider/model.metadata.json
+
+input-history-file: .aider/input.history
+
+chat-history-file: .aider/chat.history.md
+
+llm-history-file: .aider/llm.history
+
+analytics-log: .aider/analytics.log
+
+pretty: false
+
+gitignore: false
+
+auto-commits: false
+
+dirty-commits: false
+
+attribute-author: true
+
+attribute-committer: true
+
+analytics: true
+
+vim: false
+
+cache-prompts: true
+
+restore-chat-history: true
+
+voice-format: wav
+
+voice-language: en
+
+# model: gemini/gemini-2.0-flash-exp
+# editor-model: gemini/gemini-2.0-flash-exp
+
+model: anthropic/claude-3-5-sonnet-20241022
+editor-model: anthropic/claude-3-5-sonnet-20241022
+
+# model: openai/gpt-4o-2024-11-20
+# editor-model: openai/gpt-4o-2024-11-20
+
+weak-model: openai/gpt-4o-mini
+
+lint-cmd:
+  - "python:ruff format"
+  - "python:ruff check"
+  - "python:pyright"
+
