@@ -22,3 +22,4 @@ $bibtex_use = 1;
 # Also remove pdfsync files on clean
 $clean_ext = 'pdfsync synctex.gz';
 
+set_tex_cmds('-synctex=1 %O %S');
